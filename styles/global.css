@@ -36,17 +36,23 @@
 
 
     /*Tipografia*/
-    --logo: normal 40px/auto "Leckerli One", cursive;
+    --font-family-leckerli: "Leckerli One", cursive;
 
     --font-family-baloo: "Baloo 2", sans-serif;
-    --heading-md: bold 28px/auto var(--font-family-baloo);
-    --heading-sm: bold 18px/auto var(--font-family-baloo);
+    --heading-md: bold 28px var(--font-family-baloo);
+    --heading-sm: bold 18px var(--font-family-baloo);
 
     --font-family-opensans: "Open Sans", sans-serif;
-    --body-md-600: 600 16px/auto var(--font-family-opensans);
-    --body-md-400: 400 16px/auto var(--font-family-opensans);
-    --body-sm-600: 600 14px/auto var(--font-family-opensans);
-    --body-sm-400: 400 14px/auto var(--font-family-opensans);
-    --body-xs-600: 600 12px/auto var(--font-family-opensans);
-    --body-xs-400: 400 12px/auto var(--font-family-opensans);
+    --body-md-600: 600 16px var(--font-family-opensans);
+    --body-md-400: 400 16px var(--font-family-opensans);
+    --body-sm-600: 600 14px var(--font-family-opensans);
+    --body-sm-400: 400 14px var(--font-family-opensans);
+    --body-xs-600: 600 12px var(--font-family-opensans);
+    --body-xs-400: 400 12px var(--font-family-opensans);
+}
+
+body {
+    background-color: var(--shape-background);
+    color: var(--text-body);
+    font: var(--body-md-400);
 }

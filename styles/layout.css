@@ -1,0 +1,33 @@
+#app {
+    display: grid;
+    grid-template-columns: 32.85% 67.15%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+aside {
+    background: url(../assets/Background.png) no-repeat;
+    background-size: cover;
+    border-radius: 12px;
+    margin: 1.25rem;
+
+    .aside-contain {
+        padding: 2rem;
+
+        img {
+            width: 3rem;
+            margin-bottom: 16px;
+        }
+
+        #title {
+            font: 400 2.5rem var(--font-family-leckerli);
+            color: var(--pink);
+            margin-bottom: 0.25rem;
+        }
+    }
+}
+
+main {
+    background-color: var(--shape-body);
+    overflow: auto;
+}
