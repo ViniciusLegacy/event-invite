@@ -1,0 +1,25 @@
+input, textarea {
+    appearance: none;
+    background-color: var(--input-base);
+    border: 1px solid var(--input-stroke);
+    height: 3rem;
+    border-radius: .5rem;
+    padding: 0.81rem 1rem;
+    color: var(--input-placeholder);
+    font: var(--body-md-400);
+    outline: none;
+}
+
+textarea {
+    height: 8.5rem;
+}
+
+input:focus {
+    border-color: var(--brand-light);
+}
+
+input {
+    &:invalid {
+        border-color: var(--danger);
+    }
+}

@@ -8,7 +8,7 @@
 aside {
     background: url(../assets/Background.png) no-repeat;
     background-size: cover;
-    border-radius: 12px;
+    border-radius: 0.75rem;
     margin: 1.25rem;
 
     .aside-contain {
@@ -19,7 +19,7 @@ aside {
             margin-bottom: 16px;
         }
 
-        #title {
+        h1 {
             font: 400 2.5rem var(--font-family-leckerli);
             color: var(--pink);
             margin-bottom: 0.25rem;
@@ -30,4 +30,14 @@ aside {
 main {
     background-color: var(--shape-body);
     overflow: auto;
+    margin: 1.25rem 1.25rem 1.25rem 0;
+    padding: 5rem 8.12rem;
+    border-radius: 0.75rem;
+    height: 100vh;
+
+    h2 {
+        color: var(--text-heading);
+        font: var(--heading-md);
+        margin-bottom: 2.5rem;
+    }
 }

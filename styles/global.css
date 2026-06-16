@@ -54,5 +54,5 @@
 body {
     background-color: var(--shape-background);
     color: var(--text-body);
-    font: var(--body-md-400);
+    font: var(--body-sm-400);
 }
