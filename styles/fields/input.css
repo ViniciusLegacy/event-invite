@@ -14,7 +14,7 @@ textarea {
     height: 8.5rem;
 }
 
-input:focus {
+input:focus, textarea:focus {
     border-color: var(--brand-light);
 }
 

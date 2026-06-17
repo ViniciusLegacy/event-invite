@@ -78,3 +78,35 @@ fieldset {
     border-top: 1px solid var(--input-stroke);
     padding-top: 2.5rem;
 }
+
+.content-button {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: end;
+
+    & button {
+        all: unset;
+
+        background-color: var(--brand-dark);
+        border-radius: .5rem;
+        padding: 0.81rem 1.25rem;
+
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+
+        img {
+            width: 1.25rem;
+            height: 1.25rem;
+        }
+
+        span {
+            color: var(--text-heading);
+            font: var(--body-sm-600);
+        }
+
+        &:hover {
+            background-color: var(--brand-mid);
+        }
+    }
+}
