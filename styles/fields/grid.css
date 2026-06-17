@@ -1,0 +1,40 @@
+.themes-wrapper {
+    margin-top: 1.75rem;
+    display: grid;
+    gap: 1rem;
+
+    .themes-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: .5rem;
+
+        .theme {
+            max-width: 134px;
+            display: grid;
+            gap: .5rem;;
+            padding: 0.25rem 0.25rem .5rem;
+            background-color: var(--shape-button);
+            border-radius: .5rem;
+            position: relative;
+
+            input {
+                all: unset;
+
+                position: absolute;
+                inset: 1;
+                width: 100%;
+                height: 100%;
+                cursor: pointer;
+            }
+
+            span {
+                text-align: center;
+                color: var(--text-heading);
+            }
+
+            &:has(input:checked) {
+                outline: 2px solid var(--brand-light);
+            }
+        }
+    }
+}

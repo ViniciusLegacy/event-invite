@@ -1,0 +1,65 @@
+.droparea-wrapper {
+    grid-template-areas: "label label" "button text" "error error";
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+
+    label {
+        grid-area: label;
+    }
+
+    span {
+        grid-area: text;
+        display: grid;
+        align-items: center;
+
+        color: var(--input-placeholder);
+        font: var(--text-md-400);
+    }
+
+    .error {
+        grid-area: error;
+        display: none;
+        align-items: center;
+        gap: .5rem;
+
+        span {
+            color: var(--danger);
+        }
+    }
+}
+
+.dropzone {
+    grid-area: button;
+
+    position: relative;
+    width: 7.5rem;
+    height: 2.5rem;
+    background-color: var(--shape-button);
+    border-radius: .5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+
+    & input {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        opacity: 0;
+
+        margin: 0;
+        padding: 0;
+
+        &:invalid {
+            display: flex;
+        }
+    }
+
+    & span {
+        color: var(--text-heading);
+        font: var(--text-md-600);
+    }
+}

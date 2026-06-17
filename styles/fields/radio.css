@@ -23,6 +23,7 @@
             width: 100%;
             height: 100%;
             inset: 0;
+            cursor: pointer;
 
             &:checked + .content-elements {
                 background-color: var(--shape-button);
@@ -63,5 +64,56 @@
             }
         }
 
+    }
+}
+
+.switch-wrapper {
+    grid-template-areas: "label label" "switch text";
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+
+    label {
+        grid-area: label;
+    }
+
+    .btn-switch-slider {
+        grid-area: switch;
+        width: 4rem;
+        height: 2rem;
+        border: 1px solid var(--input-stroke);
+        border-radius: 1.25rem;
+        background-color: var(--input-base);
+        position: relative;
+
+        & > input {
+            width: 1.5rem;
+            height: 1.5rem;
+            background-color: var(--input-stroke);
+            border-radius: 50%;
+            padding: 0;
+            cursor: pointer;
+            outline: none;
+
+            position: absolute;
+            top: 50%;
+            right: 0.25rem;
+            transform: translateY(-50%);
+
+            &:checked {
+                left: 0.25rem;
+                background-color: var(--text-heading);
+            }
+        }
+    }
+
+    .btn-switch-slider:has(input:checked) {
+        background-color: var(--brand-light);
+    }
+
+    span {
+        grid-area: text;
+        display: grid;
+        align-items: center;
+        color: var(--text-heading);
     }
 }

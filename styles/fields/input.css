@@ -23,3 +23,71 @@ input {
         border-color: var(--danger);
     }
 }
+
+.colors {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+
+    input[type="radio"] {
+        width: 2.5rem;
+        height: 2.5rem;
+        border: 6px solid var(--shape-button);
+        border-radius: 50%;
+        padding: 0;
+        cursor: pointer;
+
+        &:hover {
+            border-color: var(--shape-hover);
+        }
+
+        &:checked {
+            border-color: var(--shape-hover);
+            outline: 2px solid var(--brand-light);
+        }
+    }
+
+    #light-blue {
+        background-color: var(--brand-light);
+    }
+
+    #navy {
+        background-color: var(--navy);
+    }
+
+    #purple {
+        background-color: var(--purple);
+    }
+
+    #fuschia {
+        background-color: var(--fuschia);
+    }
+
+    #pink {
+        background-color: var(--pink);
+    }
+
+    #red {
+        background-color: var(--danger);
+    }
+
+    #orange {
+        background-color: var(--orange);
+    }
+
+    #yellow {
+        background-color: var(--yellow);
+    }
+
+    #lime {
+        background-color: var(--lime);
+    }
+
+    #green {
+        background-color: var(--green);
+    }
+
+    #cyan {
+        background-color: var(--cyan);
+    }
+}
