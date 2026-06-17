@@ -17,14 +17,7 @@
     }
 
     .error {
-        grid-area: error;
         display: none;
-        align-items: center;
-        gap: .5rem;
-
-        span {
-            color: var(--danger);
-        }
     }
 }
 
@@ -52,10 +45,6 @@
 
         margin: 0;
         padding: 0;
-
-        &:invalid {
-            display: flex;
-        }
     }
 
     & span {
